@@ -6,6 +6,7 @@ v1.0
 
 print +--+ line
     size*2+1
+    *actually -1. The other thing had spaces in front of the first / and after the last \ in the middlest area
 
 
 make top program
@@ -38,14 +39,16 @@ make bottom program
 
 
 public class Challenge1Hourglass {
+    public static final int SIZE = 4;
     public static void main(String[] args){
-        horizontalLine(9,"+","-","+");//bruteforce adding everything in.
-        topCarat(5,"/","*","\\");//may add variable for size
-        botCarat(5,"\\","*","/");
-        horizontalLine(9,"+","-","+");
-        botCarat(5,"\\","*","/");
-        topCarat(5,"/","*","\\");
-        horizontalLine(9,"+","-","+");
+
+        horizontalLine(SIZE*2-1,"+","-","+");//brute-force adding everything in.
+        topCarat(SIZE,"/","*","\\");
+        botCarat(SIZE,"\\","*","/");
+        horizontalLine(SIZE*2-1,"+","-","+");
+        botCarat(SIZE,"\\","*","/");
+        topCarat(SIZE,"/","*","\\");
+        horizontalLine(SIZE*2-1,"+","-","+");
     }
     public static void horizontalLine(int length, String startChar, String midChar, String endChar){// the method for the +--+
         System.out.print(startChar);// this is for the first "+" you can change it to anything, as I left that up to parameters

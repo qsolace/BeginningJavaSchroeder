@@ -40,6 +40,7 @@ make bottom program
 
 public class Challenge1Hourglass {
     public static final int SIZE = 4;
+    public static int intNum = 5;
     public static void main(String[] args){
 
         horizontalLine(SIZE*2-1,"+","-","+");//brute-force adding everything in.

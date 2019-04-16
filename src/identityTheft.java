@@ -16,7 +16,7 @@ public class identityTheft {
         String firstName = scan.next();
         System.out.print("\nSo, your first name is currently " + firstName);
         System.out.println(", and your last name is " + lastName);
-        System.out.print("\nWell, now, you're John Smith. Thank you for your purchase, John");
+        System.out.print("\nWell, now, you're Lord Percival Fredrickstein von Musel Klowolski de Rolo III. Thank you for your purchase, Percy");
 
     }
 }

@@ -1,4 +1,5 @@
 /*
+Ryan Schroeder
 first five characters. Even index. (0,2,4,6,8)
 0-95 = ascii characters
 Hiejlzl3ow
@@ -8,8 +9,9 @@ public class encryptedWords {
 
     public static void main(String[] args){
         String message = "Yeah. No. I'll Pass";
-        String encodedMessage = encoder(message);//doing some encryptng
+        String encodedMessage = encoder(message);//doing some encrypting
         System.out.println(encodedMessage);
+        System.out.println(decoder("Hiejlzl3ow"));
 
     }
     public static String decoder(String encodedMessage){

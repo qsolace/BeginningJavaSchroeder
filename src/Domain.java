@@ -1,7 +1,15 @@
+/*
+Ryan Schroeder
+16 April 2019
+
+ */
+
 public class Domain {
     private String domainName;
     public void setDomainName(String domainName1){domainName=domainName1;}//a mutator for the domainName object
+
     public String toString(){return domainName;}//accessor for domainName
+
     public boolean hasWWW(){
         if (domainName.indexOf("www")==0){//checks to see if "www" is the first 3 chars.
             return true;

@@ -1,4 +1,7 @@
 /*
+
+Ryan Schroeder
+
 REQUEST:
         double for interest rate
         int for years of payment
@@ -38,7 +41,7 @@ public class excitingMorgageCalculations {
 
         System.out.print("What is your mortgage amount? (Format as XXXXX, without dollar signs, spaces, or punctuation) > ");
         dollarsBorrowed = scan.nextInt();
-        System.out.print("\nWhat is your interest rate? (Format as .0XXX, without the percent sign or spaces) > ");//asking for values
+        System.out.print("\nWhat is your monthly interest rate? (Format as .0XXX, without the percent sign or spaces) > ");//asking for values
         interestRate = scan.nextDouble();
         System.out.print("\nHow many years is your loan for? (Format as XX) > ");
         yearsOfPayment = scan.nextInt();

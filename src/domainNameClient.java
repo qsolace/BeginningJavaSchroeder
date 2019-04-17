@@ -1,14 +1,14 @@
 public class domainNameClient {
     public static void main(String[] args){
-        Domain yahoo = new Domain();
-        Domain google = new Domain();
+        Domain domain1 = new Domain();
+        Domain domain2 = new Domain();//making objects
         Domain blah = new Domain();
-        google.setDomainName("google.com");
-        yahoo.setDomainName("www.yahoo.com");
-        blah.setDomainName("blahblahblah,,,sdf");
-        System.out.println(yahoo.toString());
-        System.out.println(yahoo.hasWWW()+", "+google.hasWWW());
-        System.out.println(yahoo.extension());
-        System.out.println(yahoo.name());
+        domain1.setDomainName("mcdmproductions.com");
+        domain2.setDomainName("www.critrole.com");
+        blah.setDomainName("blahblahblah,,,sdf");//assigning values
+        System.out.println(domain2.toString());//printing the String
+        System.out.println(domain2.hasWWW()+", "+domain1.hasWWW());//printing whether or not it has a www
+        System.out.println(domain2.extension());//printing the extension (com)
+        System.out.println(domain2.name());//printing the main part (critrole)
     }
 }

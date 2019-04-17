@@ -38,14 +38,14 @@ public class excitingMorgageCalculations {
 
         System.out.print("What is your mortgage amount? (Format as XXXXX, without dollar signs, spaces, or punctuation) > ");
         dollarsBorrowed = scan.nextInt();
-        System.out.print("\nWhat is your interest rate? (Format as .0XXX, without the percent sign or spaces) > ");
+        System.out.print("\nWhat is your interest rate? (Format as .0XXX, without the percent sign or spaces) > ");//asking for values
         interestRate = scan.nextDouble();
         System.out.print("\nHow many years is your loan for? (Format as XX) > ");
         yearsOfPayment = scan.nextInt();
 
         annualPrincipal = dollarsBorrowed/yearsOfPayment;
         monthlyPayment = (interestRate*dollarsBorrowed)/(1-(1/(Math.pow((1+interestRate),12*yearsOfPayment))));
-        annualInterest = (monthlyPayment*12)-(dollarsBorrowed/(yearsOfPayment));
+        annualInterest = (monthlyPayment*12)-(dollarsBorrowed/(yearsOfPayment));//calculating all the things
         annualPercent = annualInterest/annualPrincipal;
         mortgageWithInterest = monthlyPayment*12*yearsOfPayment;
         overpayment = mortgageWithInterest-dollarsBorrowed;
@@ -53,7 +53,7 @@ public class excitingMorgageCalculations {
 
         System.out.println("The annual interest rate is: "+percent.format(annualPercent));
         System.out.println("The Mortgage Amount is: "+dollars.format(dollarsBorrowed));
-        System.out.println("Your monthly payment will be: "+dollars.format(monthlyPayment));
+        System.out.println("Your monthly payment will be: "+dollars.format(monthlyPayment));//printing all the things
         System.out.println("Your total payment will be: " + dollars.format(mortgageWithInterest));
         System.out.println("Your overpayment will be: "+dollars.format(overpayment));
         System.out.println("Your overpayment percentage will be: "+ percent.format(overpaymentPercent));

@@ -19,5 +19,7 @@ public class numberCompare {
             smallest = num3;
         }
         System.out.println("\nThe smallest number is " + smallest );
+        boolean a = true;
+        System.out.println(a);
     }
 }

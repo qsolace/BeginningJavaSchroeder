@@ -11,5 +11,5 @@ public class doubleReadingGlasses {
         }
         average = sum/count;
         System.out.print(average);
-    }
+    }//hi
 }

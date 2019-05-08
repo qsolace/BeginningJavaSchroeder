@@ -24,13 +24,13 @@ public class fileReader {
 
                         int number = forWord.nextInt();
                         count ++;
-                        System.out.println(number);
+                        //System.out.println(number);
 
                     }
             }
             System.out.println(line);
         }
         //System.out.printf("There were %d \"allonsy\"s in the file.",count);
-        System.out.printf("There were %d numbers in the file",count);
+        System.out.printf("\nThere were %d numbers in the file\n",count);
     }
 }

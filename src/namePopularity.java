@@ -62,7 +62,7 @@ public class namePopularity {
             System.out.printf("There were %d of those names from 1970-1980\n",y1970);
             System.out.printf("There were %d of those names from 1980-1990\n",y1980);
             System.out.printf("There were %d of those names from 1990-2000\n",y1990);
-            System.out.printf("There were %d of those names from 1200-2010\n\n",y2000);
+            System.out.printf("There were %d of those names from 2000-2010\n\n",y2000);
 
             System.out.printf("The average for %s was %d babies a year", searchName,avg);
 

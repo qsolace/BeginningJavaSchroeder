@@ -11,7 +11,7 @@ import java.io.*;
 public class decadePopularity {
     public static void main (String[] args)throws IOException{
         String name, bestName="";
-        int y1900 = -1, y1910=-1, y1920=-1, y1930=-1, y1940=-1, y1950=-1, y1960=-1, y1970=-1, y1980=-1, y1990=-1, y2000=-1, searchDate, dateNumber=1;
+        int searchDate, dateNumber=1;
         int bestNumber=0, names=0;
         File nameList = new File("C:\\Users\\ryan_\\OneDrive\\Desktop\\Greenhill-DESKTOP-7HM548H\\9th Grade\\JAVA!!!\\names.txt");
         Scanner scan = new Scanner(System.in);
@@ -20,6 +20,11 @@ public class decadePopularity {
         System.out.printf("Enter a decade from 1900-2000 > ");
         searchDate = scan.nextInt();
         dateNumber=(searchDate-1900)/10;
+        if(dateNumber>10||dateNumber<0) {
+            System.err.println("That isn't a valid date");
+            System.exit(1);
+        }
+
         while (nameScan.hasNextLine()){
             System.out.println("hi");
             Scanner lineScan = new Scanner(nameScan.nextLine());
@@ -27,9 +32,12 @@ public class decadePopularity {
 
             for(int i=0; i<=dateNumber; i++){
                 names = lineScan.nextInt();
+                System.out.println("name: "+names);
+                System.out.println("name: "+bestNumber);
             }
             if (names>bestNumber){
                 bestName=name;
+                bestNumber=names;
             }
         }
         System.out.printf("The most popular name during that decade was %s with %d names", bestName, bestNumber);
